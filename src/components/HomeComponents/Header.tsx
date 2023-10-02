@@ -3,10 +3,6 @@ import { Grid, Typography } from "@mui/material";
 import Image from "next/image";
 
 import Arrow from "../../assets/icons/arrow-right.svg";
-import Pic1 from "../../../public/images/woman-using-smartphone-technology 2.png";
-import Pic2 from "../../../public/images/AdobeStock_400053098 1.png";
-import Pic3 from "../../../public/images/AdobeStock_362497671 1.png";
-import GridPics1 from "../../../public/images/grid.136a9256d16888900db0.svg.png";
 
 export default function Header() {
   const classes = {
@@ -54,7 +50,7 @@ export default function Header() {
           <div className="grid grid-cols-2 gap-2">
             <div>
               <Image
-                src={Pic2}
+                src={"/images/AdobeStock_400053098 1.png"}
                 alt="pic"
                 width={305.333}
                 height={448}
@@ -63,30 +59,34 @@ export default function Header() {
             </div>
             <div className="row-span-2 relative">
               <Image
-                src={Pic1}
+                src={"/images/woman-using-smartphone-technology 2.png"}
                 alt="pic"
                 width={374}
                 height={448}
                 className="rounded-[10px] relative z-10"
               />
               <Image
-                src={GridPics1}
+                src={"/images/grid.136a9256d16888900db0.svg.png"}
                 alt="grid"
                 className="absolute top-[-15%] right-[-10%]"
+                width={330}
+                height={313}
               />
             </div>
             <div className="relative">
               <Image
-                src={Pic3}
+                src={"/images/AdobeStock_362497671 1.png"}
                 alt="pic"
                 width={305.333}
                 height={448}
                 className="rounded-[10px] relative z-10"
               />
               <Image
-                src={GridPics1}
+                src={"/images/grid.136a9256d16888900db0.svg.png"}
                 alt="grid"
                 className="absolute top-[-10px] left-[-10%]"
+                width={330}
+                height={313}
               />
             </div>
           </div>
