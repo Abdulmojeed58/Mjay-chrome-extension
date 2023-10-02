@@ -1,42 +1,39 @@
 import { Typography } from "@mui/material";
-import makeStyles from "@mui/styles/makeStyles";
 import Search from "../../assets/icons/search-normal.svg";
 import Image from "next/image";
 import CardComp from "@/components/Card";
 import Link from "next/link";
 
-const useStyles = makeStyles(() => ({
-  heading2: {
-    color: "#141414",
-    fontFamily: "Sora",
-    fontSize: "40px",
-    fontStyle: "normal",
-    fontWeight: "700",
-    textAlign: "left",
-  },
-
-  text2: {
-    color: "rgba(0, 0, 0, 0.75)",
-    fontFamily: "work Sans",
-    fontSize: "20px",
-    fontStyle: "normal",
-    fontWeight: "400",
-    lineHeight: "30.26px",
-    marginTop: "8px",
-  },
-}));
-
 const Profile = () => {
-  const classes = useStyles();
+  const classes = {
+    heading2: {
+      color: "#141414",
+      fontFamily: "Sora",
+      fontSize: "40px",
+      fontStyle: "normal",
+      fontWeight: "700",
+      textAlign: "left",
+    },
+
+    text2: {
+      color: "rgba(0, 0, 0, 0.75)",
+      fontFamily: "work Sans",
+      fontSize: "20px",
+      fontStyle: "normal",
+      fontWeight: "400",
+      lineHeight: "30.26px",
+      marginTop: "8px",
+    },
+  };
 
   return (
     <section className="">
       <div className="layout flex items-center flex-col lg:flex-row gap-7 lg:gap-0 justify-between mb-[43.5px]">
         <div>
-          <Typography variant="h4" className={classes.heading2}>
+          <Typography variant="h4" sx={classes.heading2}>
             Hello, John Mark
           </Typography>
-          <Typography variant="body2" className={classes.text2}>
+          <Typography variant="body2" sx={classes.text2}>
             Here are your recorded video
           </Typography>
         </div>

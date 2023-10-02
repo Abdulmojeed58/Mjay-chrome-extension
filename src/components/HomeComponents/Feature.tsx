@@ -1,45 +1,42 @@
-import { Grid } from "@mui/material";
 import { Typography } from "@mui/material";
-import makeStyles from "@mui/styles/makeStyles";
 import Image from "next/image";
 
 import Pic1 from "../../assets/icons/record-circle.png";
 import VideoLayer from "../../assets/images/Video Repository.png";
 
-const useStyles = makeStyles((theme) => ({
-  heading2: {
-    color: "#141414",
-    fontFamily: "Sora",
-    fontSize: "40px",
-    fontStyle: "normal",
-    fontWeight: "700",
-    textAlign: "center",
-  },
-
-  text2: {
-    color: "rgba(0, 0, 0, 0.75)",
-    fontFamily: "work Sans",
-    fontSize: "20px",
-    fontStyle: "normal",
-    fontWeight: "400",
-    lineHeight: "30.26px",
-    marginTop: "8px",
-    marginBottom: "64px",
-  },
-}));
 
 const Feature = () => {
-  const classes = useStyles();
+  const classes = {
+    heading2: {
+      color: "#141414",
+      fontFamily: "Sora",
+      fontSize: "40px",
+      fontStyle: "normal",
+      fontWeight: "700",
+      textAlign: "center",
+    },
+  
+    text2: {
+      color: "rgba(0, 0, 0, 0.75)",
+      fontFamily: "work Sans",
+      fontSize: "20px",
+      fontStyle: "normal",
+      fontWeight: "400",
+      lineHeight: "30.26px",
+      marginTop: "8px",
+      marginBottom: "64px",
+      textAlign: "center"
+    },
+  }
 
   return (
     <section className="layout py-[80px]">
-      <Typography variant="h4" className={classes.heading2}>
+      <Typography variant="h4" sx={classes.heading2}>
         Feature
       </Typography>
       <Typography
         variant="body2"
-        className={classes.text2}
-        sx={{ textAlign: "center" }}
+        sx={classes.text2}
       >
         Key Highlights of Our Extension
       </Typography>
@@ -60,8 +57,8 @@ const Feature = () => {
               </Typography>
               <Typography
                 variant="body2"
-                className={classes.text2}
-                sx={{ textAlign: "left" }}
+                sx={classes.text2}
+                textAlign={'center'}
               >
                 Effortless screen recording for everyone. Record with ease, no
                 tech expertise required.
@@ -83,8 +80,7 @@ const Feature = () => {
               </Typography>
               <Typography
                 variant="body2"
-                className={classes.text2}
-                sx={{ textAlign: "left" }}
+                sx={classes.text2}
               >
                 Effortless screen recording for everyone. Record with ease, no
                 tech expertise required.
@@ -106,8 +102,7 @@ const Feature = () => {
               </Typography>
               <Typography
                 variant="body2"
-                className={classes.text2}
-                sx={{ textAlign: "left" }}
+                sx={classes.text2}
               >
                 Effortless screen recording for everyone. Record with ease, no
                 tech expertise required.

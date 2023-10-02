@@ -1,27 +1,24 @@
 import { Typography } from "@mui/material";
 import Image from "next/image";
-import makeStyles from "@mui/styles/makeStyles";
 
 import Logo from "../../assets/icons/iCON 7 1.svg";
 import Google from "../../assets/icons/Google svg.svg";
 import Facebook from "../../assets/icons/Facebook svg.svg";
 import { useRouter } from "next/router";
 
-const useStyles = makeStyles((theme) => ({
-  heading2: {
-    color: "#141414",
-    fontFamily: "Sora",
-    fontSize: "32px",
-    fontStyle: "normal",
-    fontWeight: "700",
-    textAlign: "center",
-    lineHeight: "48px",
-    letterSpacing: "0.32px",
-  },
-}));
-
 const Login = () => {
-  const classes = useStyles();
+  const classes = {
+    heading2: {
+      color: "#141414",
+      fontFamily: "Sora",
+      fontSize: "32px",
+      fontStyle: "normal",
+      fontWeight: "700",
+      textAlign: "center",
+      lineHeight: "48px",
+      letterSpacing: "0.32px",
+    },
+  };
   const router = useRouter();
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
@@ -47,7 +44,7 @@ const Login = () => {
           noValidate
         >
           <div className="grid place-items-center">
-            <Typography variant="h4" className={classes.heading2}>
+            <Typography variant="h4" sx={classes.heading2}>
               Log in or Sign up
             </Typography>
             <p className="text-center text-[14px] text-[#434343] tracking-[0.14px] font-light leading-[21px] mt-[8px] w-[321px] max-w-full">
