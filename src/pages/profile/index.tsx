@@ -50,13 +50,13 @@ const Profile = () => {
       <div className="layout border-t border-[#0000001A] h-[70vh] overflow-auto pt-[40px]">
         <h4>Recent File</h4>
         <div className="grid gap-[20px] md:gap-[64px] md:grid-cols-2 justify-between mt-[24px]">
-          <Link href="/profile/a">
+          <Link href="/profile/:a">
             <CardComp />
           </Link>
-          <Link href="/profile/a">
+          <Link href="/profile/:a">
             <CardComp />
           </Link>
-          <Link href="/profile/a">
+          <Link href="/profile/:a">
             <CardComp />
           </Link>
         </div>
