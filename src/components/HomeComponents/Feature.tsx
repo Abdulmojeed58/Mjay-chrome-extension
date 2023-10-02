@@ -2,7 +2,7 @@ import { Typography } from "@mui/material";
 import Image from "next/image";
 
 import Pic1 from "../../assets/icons/record-circle.png";
-import VideoLayer from "../../assets/images/Video Repository.png";
+import VideoLayer from "../../../public/images/Video Repository.png";
 
 
 const Feature = () => {

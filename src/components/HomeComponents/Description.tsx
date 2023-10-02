@@ -4,7 +4,7 @@ import { Grid } from "@mui/material";
 import { Typography } from "@mui/material";
 import Image from "next/image";
 
-import Vector from "../../assets/images/Vector.png";
+import Vector from "../../../public/images/Vector.png";
 
 const Description = () => {
   const classes = {

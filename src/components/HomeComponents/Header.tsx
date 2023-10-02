@@ -3,10 +3,10 @@ import { Grid, Typography } from "@mui/material";
 import Image from "next/image";
 
 import Arrow from "../../assets/icons/arrow-right.svg";
-import Pic1 from "../../assets/images/woman-using-smartphone-technology 2.png";
-import Pic2 from "../../assets/images/AdobeStock_400053098 1.png";
-import Pic3 from "../../assets/images/AdobeStock_362497671 1.png";
-import GridPics1 from "../../assets/images/grid.136a9256d16888900db0.svg.png";
+import Pic1 from "../../../public/images/woman-using-smartphone-technology 2.png";
+import Pic2 from "../../../public/images/AdobeStock_400053098 1.png";
+import Pic3 from "../../../public/images/AdobeStock_362497671 1.png";
+import GridPics1 from "../../../public/images/grid.136a9256d16888900db0.svg.png";
 
 export default function Header() {
   const classes = {
