@@ -2,6 +2,7 @@ import { Typography } from "@mui/material";
 import Image from "next/image";
 import Link from "next/link";
 import Facebook from "../assets/icons/Facebook svg.png";
+import { PATHS } from "@/routes";
 
 const RecordPage = () => {
   const classes = {
@@ -27,8 +28,8 @@ const RecordPage = () => {
     },
   };
   return (
-    <section className="layout min-h-[70vh] my-[40px]">
-      <div className="grid md:grid-cols-2 gap-y-5">
+    <section className="min-h-[70vh] my-[40px]">
+      <div className="layout grid md:grid-cols-2 gap-y-5">
         <div className="md:border-r">
           <Typography variant="h4" sx={classes.heading2}>
             Your video is ready!
@@ -100,6 +101,23 @@ const RecordPage = () => {
         <div className="md:pl-[40px]">
           <Image src="/images/video.png" alt="video" width={575} height={473} />
         </div>
+      </div>
+      <div className="layout bg-[#F9F9FF] py-[48px] flex flex-col gap-[40px] items-center justify-between my-[64px]">
+        <p className="text-[24px] font-[600] text-[#141414] text-center md:w-[653px]">
+          To ensure the availability and privacy of your video, we recommend
+          saving it to your account.
+        </p>
+        <button className="py-[10px] px-[18px] bg-switchColor rounded-[8px] text-white">
+          Save video
+        </button>
+        <p className="text-[24px] font-[600] text-[#7E7E7E]">
+          Do you have an account?{" "}
+          <span>
+            <Link href={PATHS.auth.login} className="text-switchColor">
+              Create Account
+            </Link>
+          </span>
+        </p>
       </div>
     </section>
   );

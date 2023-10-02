@@ -3,6 +3,7 @@ import React from "react";
 import { Grid } from "@mui/material";
 import { Typography } from "@mui/material";
 import Image from "next/image";
+import Card from "@mui/material/Card";
 
 import Vector from "../../../public/images/Vector.png";
 
@@ -37,7 +38,17 @@ const Description = () => {
       </Typography>
 
       <Grid container spacing={2}>
-        <Grid item xs={12} md={4}>
+        <Grid
+          item
+          xs={12}
+          md={4}
+          sx={{
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+            flexDirection: "column",
+          }}
+        >
           <div className="flex items-center justify-center bg-switchColor h-[68px] w-[68px] rounded-full font-bold text-[42px] text-white mx-auto mb-[32px]">
             <h1>1</h1>
           </div>
@@ -55,9 +66,21 @@ const Description = () => {
             Click the "Start Recording" button in our extension. choose which
             part of your screen to capture and who you want to send it to.
           </Typography>
-          <Image src={Vector} alt="vector" />
+          <Card sx={{ maxWidth: 345 }}>
+            <Image src={Vector} alt="vector" />
+          </Card>
         </Grid>
-        <Grid item xs={12} md={4}>
+        <Grid
+          item
+          xs={12}
+          md={4}
+          sx={{
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+            flexDirection: "column",
+          }}
+        >
           <div className="flex items-center justify-center bg-switchColor h-[68px] w-[68px] rounded-full font-bold text-[42px] text-white mx-auto mb-[32px]">
             <h1>1</h1>
           </div>
@@ -76,9 +99,21 @@ const Description = () => {
             Click the "Start Recording" button in our extension. choose which
             part of your screen to capture and who you want to send it to.
           </Typography>
-          <Image src={Vector} alt="vector" />
+          <Card sx={{ maxWidth: 345 }}>
+            <Image src={Vector} alt="vector" />
+          </Card>
         </Grid>
-        <Grid item xs={12} md={4}>
+        <Grid
+          item
+          xs={12}
+          md={4}
+          sx={{
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+            flexDirection: "column",
+          }}
+        >
           <div className="flex items-center justify-center bg-switchColor h-[68px] w-[68px] rounded-full font-bold text-[42px] text-white mx-auto mb-[32px]">
             <h1>1</h1>
           </div>
@@ -97,7 +132,9 @@ const Description = () => {
             Click the "Start Recording" button in our extension. choose which
             part of your screen to capture and who you want to send it to.
           </Typography>
-          <Image src={Vector} alt="vector" />
+          <Card sx={{ maxWidth: 345 }}>
+            <Image src={Vector} alt="vector" />
+          </Card>
         </Grid>
       </Grid>
     </section>
